@@ -997,9 +997,9 @@ section{padding-block:clamp(72px,10vw,130px)}
 /* Hanging contest board — fixed outside the navbar */
 .hanging-anshu-board{
  position:fixed;
- top:calc(71px + env(safe-area-inset-top,0px));
+ top:env(safe-area-inset-top,0px);
  right:clamp(12px,2.8vw,44px);
- width:clamp(215px,20vw,255px);
+ width:clamp(160px,14vw,195px);
  z-index:49;
  pointer-events:none;
  opacity:0;
@@ -1022,7 +1022,7 @@ section{padding-block:clamp(72px,10vw,130px)}
  left:50%;top:69%;
  transform:translate(-50%,-50%);
  white-space:nowrap;
- font:600 clamp(12px,1.1vw,14px)/1 var(--t);
+ font:600 clamp(9px,0.9vw,12px)/1 var(--t);
  letter-spacing:0;
  color:#38210d;
  text-shadow:0 1px 0 rgba(255,228,170,.28);
@@ -1044,7 +1044,7 @@ section{padding-block:clamp(72px,10vw,130px)}
  100%{transform:rotate(0)}
 }
 @media(max-width:600px){
- .hanging-anshu-board{right:10px;top:calc(74px + env(safe-area-inset-top,0px));width:min(212px,62vw)}
+ .hanging-anshu-board{right:8px;top:env(safe-area-inset-top,0px);width:min(140px,36vw)}
 }
 @media(prefers-reduced-motion:reduce){
  .hanging-anshu-board,.hanging-anshu-board.is-visible{transition:none}
