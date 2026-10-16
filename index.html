@@ -994,6 +994,10 @@ section{padding-block:clamp(72px,10vw,130px)}
 .rn2{margin-top:clamp(28px,4vw,50px);font-size:.74rem;color:#7d766b}
 @media (prefers-reduced-motion:reduce){.cl{opacity:1}}
 @media (max-width:860px){.pr2,.pr3{grid-template-columns:1fr}.cl{rotate:calc(var(--r,0deg)*.5)}}
+/* Contest credit — independent from the navigation */
+.hero .build-credit{position:absolute;top:96px;right:clamp(18px,3.2vw,52px);z-index:5;margin:0;color:#242424;font:500 clamp(.70rem,.86vw,.84rem)/1.8 var(--t);letter-spacing:.005em;text-align:right;white-space:nowrap}
+.hero .build-credit .build-name{font-family:'Segoe Script','Brush Script MT','Apple Chancery',cursive;font-weight:600;font-size:1.28em;font-style:italic;text-decoration-line:underline;text-decoration-color:currentColor;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-skip-ink:auto}
+@media(max-width:600px){.hero .build-credit{top:86px;right:16px;font-size:.66rem}}
 </style>
 </head>
 <body>
@@ -1020,6 +1024,7 @@ section{padding-block:clamp(72px,10vw,130px)}
 
 <main id="top">
 <header class="hero">
+ <p class="build-credit">Build by <span class="build-name">Anshuman</span> (Rounie HQ Contest)</p>
  <div class="halo" aria-hidden="true"></div>
  <div class="car" role="img" aria-label="Top view of the Kestrel K1 in red and white"></div>
  <div class="wrap hg">
